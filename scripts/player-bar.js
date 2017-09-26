@@ -35,6 +35,7 @@ $('button#previous').click(function() {
 });
 
 $('#time-control input').on('input', function (event) {
+  player.skipTo(event.target.value);
 });
 
 setInterval( () => {
